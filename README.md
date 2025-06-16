@@ -120,14 +120,8 @@ uvx mcp-feedback-enhanced@latest
 **安裝 Context7**
 
 ```bash
-# 安裝 Context7
-npm install -g @upstash/context7
-
-# 設置 Upstash 帳戶 (免費)
-# 1. 前往 https://console.upstash.com/
-# 2. 使用 GitHub 登入
-# 3. 創建 Vector Database
-# 4. 複製 URL 和 Token
+# Context7 MCP 伺服器 (無需註冊)
+# 將會在配置 Cursor IDE 時自動安裝
 ```
 
 #### 步驟 2: 配置 Cursor IDE
@@ -157,12 +151,8 @@ npm install -g @upstash/context7
     },
     "context7": {
       "command": "npx",
-      "args": ["@upstash/context7"],
-      "timeout": 300,
-      "env": {
-        "UPSTASH_VECTOR_REST_URL": "your-database-url",
-        "UPSTASH_VECTOR_REST_TOKEN": "your-database-token"
-      }
+      "args": ["-y", "@upstash/context7-mcp"],
+      "timeout": 300
     }
   }
 }
@@ -210,6 +200,11 @@ echo "請分析這個專案的類型和複雜度"
 ```
 
 > 💡 **詳細安裝指引**: 請參考 [MCP 安裝與使用指引](docs/mcp-setup-guide.md) 獲得完整的設置說明和疑難排解。
+>
+> 🔧 **技術支援**: 如有任何問題，請查看：
+>
+> - [MCP Feedback Enhanced](https://github.com/Minidoracat/mcp-feedback-enhanced) - 互動回饋機制
+> - [Context7](https://github.com/upstash/context7) - 動態技術文檔獲取
 
 ### 🎯 選擇您的角色配置
 

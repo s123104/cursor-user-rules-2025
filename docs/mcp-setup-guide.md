@@ -111,51 +111,43 @@ make build-desktop-release                # 發布版本
 
 ## 📚 Context7 安裝
 
-### 1. 安裝 Context7 MCP Server
+### 1. 簡化安裝流程
 
-```bash
-# 使用 npm 安裝
-npm install -g @upstash/context7
+**Context7 已更新為更簡單的配置方式，無需額外註冊或設置！**
 
-# 或使用 yarn
-yarn global add @upstash/context7
+Context7 MCP 伺服器會在 Cursor IDE 配置時自動安裝，無需手動安裝或註冊 Upstash 帳戶。
 
-# 驗證安裝
-context7 --version
+### 2. 配置說明
+
+Context7 使用以下簡化配置：
+
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "timeout": 300
+    }
+  }
+}
 ```
 
-### 2. 設置 Upstash 帳戶
+**配置說明**：
 
-1. **註冊 Upstash 帳戶**
+- `npx -y @upstash/context7-mcp`: 自動安裝並執行 Context7 MCP 伺服器
+- 無需環境變數或額外的認證設定
+- 首次執行會自動下載所需組件
 
-   - 前往 [Upstash Console](https://console.upstash.com/)
-   - 使用 GitHub 或 Google 帳戶註冊
+### 3. 功能測試
 
-2. **創建 Vector Database**
+在 Cursor IDE 中測試 Context7 功能：
 
-   - 在 Upstash Console 中創建新的 Vector Database
-   - 選擇適合的區域 (建議選擇離您最近的區域)
-   - 記錄 Database URL 和 Token
-
-3. **配置環境變數**
-   ```bash
-   # 設置 Upstash 憑證
-   export UPSTASH_VECTOR_REST_URL="your-database-url"
-   export UPSTASH_VECTOR_REST_TOKEN="your-database-token"
-   ```
-
-### 3. Context7 功能測試
-
-```bash
-# 測試基本功能
-context7 test
-
-# 測試文檔檢索
-context7 search "React hooks"
-
-# 測試程式庫解析
-context7 resolve "react"
 ```
+請使用 Context7 獲取 React 的最新文檔
+```
+
+**預期結果**：Context7 會自動解析並提供 React 的最新技術文檔。
 
 ---
 
@@ -188,12 +180,8 @@ context7 resolve "react"
     },
     "context7": {
       "command": "npx",
-      "args": ["@upstash/context7"],
-      "timeout": 300,
-      "env": {
-        "UPSTASH_VECTOR_REST_URL": "your-database-url",
-        "UPSTASH_VECTOR_REST_TOKEN": "your-database-token"
-      }
+      "args": ["-y", "@upstash/context7-mcp"],
+      "timeout": 300
     }
   }
 }
@@ -311,9 +299,10 @@ context7 resolve "react"
 {
   "mcpServers": {
     "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "timeout": 300,
       "env": {
-        "UPSTASH_VECTOR_REST_URL": "${UPSTASH_VECTOR_REST_URL}",
-        "UPSTASH_VECTOR_REST_TOKEN": "${UPSTASH_VECTOR_REST_TOKEN}",
         "CONTEXT7_RATE_LIMIT": "100"
       }
     }
@@ -386,23 +375,21 @@ MCP_WEB_PORT=9000 uvx mcp-feedback-enhanced@latest test --web
 # 檢查防火牆設定
 ```
 
-#### 3. Context7 認證失敗
+#### 3. Context7 連接失敗
 
-**問題**: `UPSTASH_VECTOR_REST_URL` 或 `UPSTASH_VECTOR_REST_TOKEN` 錯誤
+**問題**: Context7 MCP 伺服器無法正常運作
 
 **解決方案**:
 
 ```bash
-# 驗證環境變數
-echo $UPSTASH_VECTOR_REST_URL
-echo $UPSTASH_VECTOR_REST_TOKEN
+# 清除 npm 快取
+npm cache clean --force
 
-# 重新設定憑證
-export UPSTASH_VECTOR_REST_URL="your-correct-url"
-export UPSTASH_VECTOR_REST_TOKEN="your-correct-token"
+# 手動測試安裝
+npx -y @upstash/context7-mcp
 
-# 測試連接
-context7 test
+# 檢查網路連接
+ping github.com
 ```
 
 #### 4. Cursor IDE 無法識別 MCP 伺服器
@@ -486,6 +473,8 @@ npm install -g @upstash/context7 --force
 {
   "mcpServers": {
     "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
       "timeout": 600,
       "env": {
         "CONTEXT7_TIMEOUT": "30000",
@@ -505,7 +494,7 @@ npm install -g @upstash/context7 --force
 MCP_DEBUG=true uvx mcp-feedback-enhanced@latest
 
 # Context7 除錯
-DEBUG=context7:* context7 test
+DEBUG=context7:* npx -y @upstash/context7-mcp
 ```
 
 #### 2. 日誌分析
@@ -526,7 +515,6 @@ uvx mcp-feedback-enhanced@latest get_system_info
 
 - **MCP Feedback Enhanced**: [GitHub Repository](https://github.com/Minidoracat/mcp-feedback-enhanced)
 - **Context7**: [GitHub Repository](https://github.com/upstash/context7)
-- **Upstash Console**: [https://console.upstash.com/](https://console.upstash.com/)
 - **Cursor IDE**: [https://cursor.sh/](https://cursor.sh/)
 
 ### 社群支援
@@ -535,6 +523,15 @@ uvx mcp-feedback-enhanced@latest get_system_info
 - **GitHub Issues**:
   - [MCP Feedback Enhanced Issues](https://github.com/Minidoracat/mcp-feedback-enhanced/issues)
   - [Context7 Issues](https://github.com/upstash/context7/issues)
+
+### 疑難排解與支援
+
+如遇到任何安裝或配置問題，請依序查看：
+
+1. **本文檔的疑難排解章節** - 包含最常見問題的解決方案
+2. **[MCP Feedback Enhanced GitHub](https://github.com/Minidoracat/mcp-feedback-enhanced)** - 互動回饋機制相關問題
+3. **[Context7 GitHub](https://github.com/upstash/context7)** - 技術文檔獲取相關問題
+4. **社群討論區** - Discord 或 GitHub Discussions
 
 ### 相關工具
 
@@ -561,15 +558,14 @@ uvx --force mcp-feedback-enhanced@2.5.4
 ### 更新 Context7
 
 ```bash
-# 檢查最新版本
-npm list -g @upstash/context7
+# Context7 MCP 伺服器會自動使用最新版本
+# 如需強制更新，可清除 npm 快取
 
-# 更新到最新版本
-npm update -g @upstash/context7
+# 清除快取
+npm cache clean --force
 
-# 強制重新安裝
-npm uninstall -g @upstash/context7
-npm install -g @upstash/context7
+# 重新執行會自動下載最新版本
+npx -y @upstash/context7-mcp
 ```
 
 ---

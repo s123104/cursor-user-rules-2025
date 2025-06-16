@@ -3,10 +3,12 @@
 
 ```yaml
 # ──────────── 系統配置資訊 ────────────
-system_version: "2025.6.0"
+system_version: "2025.6.1"
 last_updated: "2025-06-16T10:49:55+08:00"
 next_review: "2025-09-16T10:49:55+08:00"
 compatibility: "Cursor v0.40+, Node.js 20+, Python 3.11+, Docker 24+"
+mcp_feedback_required: true
+context7_mandatory: true
 
 # ▶︎ 個人化設定 ────────────────────────────────
 USER_ROLE: "your-name"              # ← 請修改為您的實際帳號名稱
@@ -33,7 +35,41 @@ deployment_target: "auto-detect"   # local | cloud | hybrid | edge
 
 ---
 
-## § 1 強制系統時間獲取機制
+## § 1 MCP Interactive Feedback 強制規則（核心功能）
+
+**絕對強制執行**，無例外：
+1. **任一流程、思考步驟、詢問或回覆，必須呼叫 `mcp-feedback-enhanced`**
+2. **收到使用者非空回饋後立即再次呼叫並依內容調整行為**
+3. **只有當使用者明確回覆「結束」或「不再需要互動」時，才可停止呼叫**
+4. **未收到結束指令前，所有步驟皆需循環呼叫**
+5. **任務結束前再次呼叫以蒐集最終回饋**
+
+**頻率調節依複雜度自動調整**：
+| 複雜度 | minimal | moderate | comprehensive | enterprise |
+| --- | ------- | -------- | ------------- | ---------- |
+| 頻率 | 重大步驟 | 每步驟 | 每子步驟 | 連續監聽 |
+
+---
+
+## § 2 Context7技術文檔強制獲取機制
+
+**技術查詢強制流程**：
+1. **任何涉及技術框架、函式庫、工具或語言的討論前，必須先調用 `resolve-library-id` 和 `get-library-docs`**
+2. **禁止使用內建固定版本資訊，一律以Context7獲取的最新文檔為準**
+3. **每次技術建議都必須標註資料來源時間戳記**
+4. **定期重新獲取技術文檔以確保資訊時效性**
+
+**支援技術範圍**：
+- 前端框架（React、Vue、Angular等）
+- 後端框架（FastAPI、Django、Express等）
+- 資料庫技術（PostgreSQL、MongoDB、Redis等）
+- 雲端服務（AWS、GCP、Azure等）
+- DevOps工具（Docker、Kubernetes、Terraform等）
+- 機器學習框架（PyTorch、TensorFlow、Scikit-learn等）
+
+---
+
+## § 3 強制系統時間獲取機制
 
 **每次開始工作前必須執行以下時間獲取指令**：
 
@@ -60,9 +96,9 @@ echo "系統時間：$CURRENT_TIME"
 
 ---
 
-## § 2 智能專案類型檢測與適應系統
+## § 4 智能專案類型檢測與適應系統
 
-### 2.1 專案類型智能識別矩陣
+### 4.1 專案類型智能識別矩陣
 
 ```yaml
 PROJECT_DETECTION_MATRIX:
@@ -103,7 +139,7 @@ PROJECT_DETECTION_MATRIX:
     focus: "安全性、合規性、可擴展性"
 ```
 
-### 2.2 複雜度級別詳細定義
+### 4.2 複雜度級別詳細定義
 
 **Minimal Level (個人專案)**：
 - 文檔要求：基本README.md
@@ -135,9 +171,9 @@ PROJECT_DETECTION_MATRIX:
 
 ---
 
-## § 3 十二種工程師角色深度最佳實踐指引
+## § 5 十二種工程師角色深度最佳實踐指引
 
-### 3.1 前端工程師 (Frontend Engineer)
+### 5.1 前端工程師 (Frontend Engineer)
 
 **核心職責範圍**：
 - 用戶界面開發與用戶體驗最佳化
@@ -145,16 +181,35 @@ PROJECT_DETECTION_MATRIX:
 - 效能優化與Core Web Vitals達標
 - 無障礙性設計與實作
 
-**技術棧配置 (2025年標準)**：
+**技術棧配置（動態獲取最新版本）**：
 ```yaml
 frontend_stack:
+  # 注意：版本資訊須透過Context7動態獲取
   languages: ["TypeScript", "JavaScript", "HTML5", "CSS3"]
-  frameworks: ["React 18", "Next.js 14", "Vue 3", "Nuxt 3", "Angular 17"]
-  build_tools: ["Vite", "Webpack 5", "esbuild", "Rollup"]
-  testing: ["Vitest", "Jest", "@testing-library/react", "Playwright", "Cypress"]
-  styling: ["Tailwind CSS", "Styled-components", "CSS Modules", "Sass"]
-  state_management: ["Zustand", "Redux Toolkit", "Jotai", "Valtio"]
-  performance: ["Lighthouse CI", "Web Vitals", "Bundle Analyzer"]
+  frameworks: 
+    - name: "React"
+      source: "context7://react/docs"
+      get_latest: true
+    - name: "Next.js"
+      source: "context7://vercel/next.js"
+      get_latest: true
+    - name: "Vue"
+      source: "context7://vuejs/vue"
+      get_latest: true
+    - name: "Nuxt"
+      source: "context7://nuxt/nuxt"
+      get_latest: true
+    - name: "Angular"
+      source: "context7://angular/angular"
+      get_latest: true
+  build_tools: 
+    - context7_lookup: ["vitejs/vite", "webpack/webpack", "evanw/esbuild", "rollup/rollup"]
+  testing: 
+    - context7_lookup: ["vitest-dev/vitest", "jestjs/jest", "testing-library/react-testing-library", "microsoft/playwright", "cypress-io/cypress"]
+  styling: 
+    - context7_lookup: ["tailwindlabs/tailwindcss", "styled-components/styled-components"]
+  state_management: 
+    - context7_lookup: ["pmndrs/zustand", "reduxjs/redux-toolkit", "pmndrs/jotai", "pmndrs/valtio"]
 ```
 
 **循序漸進開發流程**：
@@ -169,7 +224,7 @@ frontend_stack:
 - 無障礙性：WCAG 2.1 AA標準
 - 效能指標：LCP ≤ 2.5s、FID ≤ 100ms、CLS ≤ 0.1
 
-### 3.2 後端工程師 (Backend Engineer)
+### 5.2 後端工程師 (Backend Engineer)
 
 **核心職責範圍**：
 - 伺服器端邏輯開發與API設計
@@ -177,16 +232,39 @@ frontend_stack:
 - 系統效能調優與擴展性設計
 - 安全性實作與監控
 
-**技術棧配置 (2025年標準)**：
+**技術棧配置（動態獲取最新版本）**：
 ```yaml
 backend_stack:
-  languages: ["Python 3.11+", "Node.js 20+", "Go 1.21+", "Rust", "Java 21"]
-  frameworks: ["FastAPI", "Django 5", "Express.js", "Gin", "Spring Boot 3"]
-  databases: ["PostgreSQL 16", "MongoDB 6", "Redis 7", "ElasticSearch 8"]
-  orm_tools: ["Prisma", "TypeORM", "SQLAlchemy 2.0", "GORM"]
-  testing: ["pytest", "Jest", "Supertest", "Go testing", "JUnit 5"]
-  security: ["OWASP Top 10", "JWT", "OAuth 2.1", "rate-limiting"]
-  monitoring: ["OpenTelemetry", "Prometheus", "Grafana", "Jaeger"]
+  # 注意：所有版本資訊須透過Context7動態獲取
+  languages:
+    - context7_lookup: ["python/cpython", "nodejs/node", "golang/go", "rust-lang/rust", "openjdk/jdk"]
+  frameworks:
+    - name: "FastAPI"
+      source: "context7://tiangolo/fastapi"
+      get_latest: true
+    - name: "Django"
+      source: "context7://django/django"
+      get_latest: true
+    - name: "Express.js"
+      source: "context7://expressjs/express"
+      get_latest: true
+    - name: "Gin"
+      source: "context7://gin-gonic/gin"
+      get_latest: true
+    - name: "Spring Boot"
+      source: "context7://spring-projects/spring-boot"
+      get_latest: true
+  databases:
+    - context7_lookup: ["postgres/postgres", "mongodb/mongo", "redis/redis", "elastic/elasticsearch"]
+  orm_tools:
+    - context7_lookup: ["prisma/prisma", "typeorm/typeorm", "sqlalchemy/sqlalchemy", "go-gorm/gorm"]
+  testing:
+    - context7_lookup: ["pytest-dev/pytest", "jestjs/jest", "ladjs/supertest", "golang/go", "junit-team/junit5"]
+  security:
+    - reference: "OWASP Top 10 (latest via context7)"
+    - context7_lookup: ["auth0/node-jsonwebtoken", "panva/oauth4webapi"]
+  monitoring:
+    - context7_lookup: ["open-telemetry/opentelemetry-js", "prometheus/prometheus", "grafana/grafana", "jaegertracing/jaeger"]
 ```
 
 **API設計最佳實踐**：
@@ -201,7 +279,7 @@ backend_stack:
 - 並發處理能力：≥ 1000 RPS
 - 系統可用性：≥ 99.9%
 
-### 3.3 全端工程師 (Full-stack Engineer)
+### 5.3 全端工程師 (Full-stack Engineer)
 
 **核心職責範圍**：
 - 前後端技術棧整合與最佳化
@@ -225,7 +303,7 @@ fullstack_integration:
 - 統一的建置與部署流程
 - 端到端效能優化
 
-### 3.4 行動應用程式工程師 (Mobile App Engineer)
+### 5.4 行動應用程式工程師 (Mobile App Engineer)
 
 **核心職責範圍**：
 - iOS/Android原生應用開發
@@ -257,7 +335,7 @@ mobile_stack:
 - 電池消耗：最小化背景活動
 - 崩潰率：≤ 0.1%
 
-### 3.5 遊戲開發工程師 (Game Developer)
+### 5.5 遊戲開發工程師 (Game Developer)
 
 **核心職責範圍**：
 - 遊戲邏輯設計與實作
@@ -288,7 +366,7 @@ game_development_stack:
 - 載入時間：≤ 30秒 (初始載入)
 - 網路延遲：≤ 100ms (多人遊戲)
 
-### 3.6 嵌入式系統工程師 (Embedded Systems Engineer)
+### 5.6 嵌入式系統工程師 (Embedded Systems Engineer)
 
 **核心職責範圍**：
 - 硬體驅動程式開發
@@ -319,7 +397,7 @@ embedded_stack:
 - 可靠性：MTBF > 10,000小時
 - 功耗：符合設計規格
 
-### 3.7 資料工程師 (Data Engineer)
+### 5.7 資料工程師 (Data Engineer)
 
 **核心職責範圍**：
 - 資料管道設計與實作
@@ -350,7 +428,7 @@ data_engineering_stack:
 - 處理延遲：符合SLA要求
 - 資料新鮮度：即時或準即時
 
-### 3.8 機器學習工程師 (Machine Learning Engineer)
+### 5.8 機器學習工程師 (Machine Learning Engineer)
 
 **核心職責範圍**：
 - ML模型開發與調優
@@ -382,7 +460,7 @@ ml_engineering_stack:
 - 模型可用性：≥ 99.9%
 - A/B測試統計顯著性：p < 0.05
 
-### 3.9 DevOps工程師 (DevOps Engineer)
+### 5.9 DevOps工程師 (DevOps Engineer)
 
 **核心職責範圍**：
 - CI/CD流程設計與維護
@@ -414,7 +492,7 @@ devops_stack:
 - 平均恢復時間：≤ 1小時
 - 系統可用性：≥ 99.9%
 
-### 3.10 安全工程師 (Security Engineer)
+### 5.10 安全工程師 (Security Engineer)
 
 **核心職責範圍**：
 - 安全威脅分析與評估
@@ -444,7 +522,7 @@ security_stack:
 - 安全事件回應時間：≤ 4小時
 - 合規性達成率：100%
 
-### 3.11 QA工程師 (Quality Assurance Engineer)
+### 5.11 QA工程師 (Quality Assurance Engineer)
 
 **核心職責範圍**：
 - 測試策略制定與執行
@@ -476,7 +554,7 @@ qa_stack:
 - 缺陷逃逸率：≤ 5%
 - 測試執行效率：持續提升
 
-### 3.12 軟體架構師 (Software Architect)
+### 5.12 軟體架構師 (Software Architect)
 
 **核心職責範圍**：
 - 系統架構設計與規劃
@@ -508,9 +586,9 @@ architect_competencies:
 
 ---
 
-## § 4 強制TODO清單管理系統
+## § 6 強制TODO清單管理系統
 
-### 4.1 TODO文檔結構標準
+### 6.1 TODO文檔結構標準
 
 每個專案必須維護以下TODO文檔結構：
 
@@ -523,7 +601,7 @@ architect_competencies:
 │   └── COMPLETED.md         # 已完成項目歸檔
 ```
 
-### 4.2 TODO項目格式標準
+### 6.2 TODO項目格式標準
 
 ```markdown
 ## TODO-[優先級]-[類型]-[負責人]-[預期完成日期]
@@ -552,7 +630,7 @@ architect_competencies:
 [額外的注意事項或說明]
 ```
 
-### 4.3 自動TODO管理機制
+### 6.3 自動TODO管理機制
 
 **讀取機制**：每次開始工作前自動讀取TODO.md檔案
 **更新機制**：每次工作結束後自動更新進度與狀態
@@ -561,9 +639,9 @@ architect_competencies:
 
 ---
 
-## § 5 智能版本管理系統
+## § 7 智能版本管理系統
 
-### 5.1 版本號格式標準
+### 7.1 版本號格式標準
 
 採用語義化版本控制（Semantic Versioning 2.0.0）：
 
@@ -576,7 +654,7 @@ architect_competencies:
 - 1.1.0+20250616 (包含建置資訊)
 ```
 
-### 5.2 自動版本更新規則
+### 7.2 自動版本更新規則
 
 ```yaml
 version_bump_rules:
@@ -590,7 +668,7 @@ version_bump_rules:
   BREAKING: "MAJOR版本遞增 - 破壞性變更"
 ```
 
-### 5.3 版本發布檢查清單
+### 7.3 版本發布檢查清單
 
 **發布前檢查**：
 - [ ] 所有TODO項目已完成或移至下個版本
@@ -602,9 +680,9 @@ version_bump_rules:
 
 ---
 
-## § 6 智能旗標系統（避免過度工程化）
+## § 8 智能旗標系統（避免過度工程化）
 
-### 6.1 漸進式功能啟用旗標
+### 8.1 漸進式功能啟用旗標
 
 ```yaml
 PROGRESSIVE_FLAGS:
@@ -642,7 +720,7 @@ PROGRESSIVE_FLAGS:
     - governance_tools
 ```
 
-### 6.2 專案類型特殊旗標
+### 8.2 專案類型特殊旗標
 
 ```yaml
 PROJECT_SPECIFIC_FLAGS:
@@ -676,9 +754,9 @@ PROJECT_SPECIFIC_FLAGS:
 
 ---
 
-## § 7 循序漸進開發指導原則
+## § 9 循序漸進開發指導原則
 
-### 7.1 MVP優先開發策略
+### 9.1 MVP優先開發策略
 
 **第一階段：核心功能MVP**
 - 最基本的功能實作
@@ -704,7 +782,7 @@ PROJECT_SPECIFIC_FLAGS:
 - 災害恢復計劃
 - 全面治理機制
 
-### 7.2 避免過早優化檢查點
+### 9.2 避免過早優化檢查點
 
 在進入下一階段前，必須通過以下檢查：
 
@@ -728,9 +806,9 @@ stage_progression_checks:
 
 ---
 
-## § 8 智能品質門檻系統
+## § 10 智能品質門檻系統
 
-### 8.1 分層品質檢查機制
+### 10.1 分層品質檢查機制
 
 ```yaml
 QUALITY_GATES:
@@ -760,7 +838,7 @@ QUALITY_GATES:
     changelog: "記錄所有變更"
 ```
 
-### 8.2 品質指標追蹤
+### 10.2 品質指標追蹤
 
 每個專案維護以下品質指標追蹤：
 
@@ -772,9 +850,9 @@ QUALITY_GATES:
 
 ---
 
-## § 9 智能部署與維運策略
+## § 11 智能部署與維運策略
 
-### 9.1 部署策略選擇
+### 11.1 部署策略選擇
 
 ```yaml
 DEPLOYMENT_STRATEGIES:
@@ -799,7 +877,7 @@ DEPLOYMENT_STRATEGIES:
     rollback: "即時回滾"
 ```
 
-### 9.2 監控與告警配置
+### 11.2 監控與告警配置
 
 依據專案複雜度自動配置監控系統：
 
@@ -810,9 +888,9 @@ DEPLOYMENT_STRATEGIES:
 
 ---
 
-## § 10 自然語言開發指令系統
+## § 12 自然語言開發指令系統
 
-### 10.1 智能指令映射
+### 12.1 智能指令映射
 
 ```bash
 # 專案管理指令
@@ -839,7 +917,7 @@ deploy-production        # 部署到生產環境
 rollback [version]       # 回滾到指定版本
 ```
 
-### 10.2 情境感知回應
+### 12.2 情境感知回應
 
 系統會根據以下情境調整回應：
 
@@ -850,9 +928,9 @@ rollback [version]       # 回滾到指定版本
 
 ---
 
-## § 11 學習與成長支援系統
+## § 13 學習與成長支援系統
 
-### 11.1 智能技能評估
+### 13.1 智能技能評估
 
 系統定期評估開發者技能水平：
 
@@ -874,7 +952,7 @@ SKILL_ASSESSMENT:
     - "團隊協作效率"
 ```
 
-### 11.2 個人化學習路徑
+### 13.2 個人化學習路徑
 
 基於技能評估結果，系統推薦個人化學習路徑：
 
@@ -885,9 +963,9 @@ SKILL_ASSESSMENT:
 
 ---
 
-## § 12 實施指南與快速開始
+## § 14 實施指南與快速開始
 
-### 12.1 5分鐘快速設置
+### 14.1 5分鐘快速設置
 
 **步驟一：個人化配置（1分鐘）**
 1. 修改USER_ROLE為您的實際帳號名稱
@@ -904,7 +982,7 @@ SKILL_ASSESSMENT:
 2. 系統引導MVP開發流程
 3. 完成後執行`check-quality`驗證品質
 
-### 12.2 疑難排解指南
+### 14.2 疑難排解指南
 
 **常見問題與解決方案**：
 
@@ -915,9 +993,9 @@ SKILL_ASSESSMENT:
 
 ---
 
-## § 13 版本資訊與後續發展
+## § 15 版本資訊與後續發展
 
-**版本**: DevSecOps Ultimate Agent 2025.6.0  
+**版本**: DevSecOps Ultimate Agent 2025.6.1  
 **建立者**: Comprehensive Engineering Team  
 **最後更新**: 2025-06-16T10:49:55+08:00  
 **相容性**: 支援所有主流開發環境與工具鏈

@@ -1,479 +1,207 @@
-<div align="center">
+# Cursor User Rules 2025 - DevSecOps Ultimate Agent
 
-<!-- 動態 Hero Banner -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Cursor%20User%20Rules%202025&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=DevSecOps%20Ultimate%20Agent%20%7C%20%E6%99%BA%E8%83%BD%E9%96%8B%E7%99%BC%E5%8A%A9%E6%89%8B&descAlignY=55&descSize=18">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,1,2,3,4,5&height=200&section=header&text=Cursor%20User%20Rules%202025&fontSize=42&fontColor=333&animation=fadeIn&fontAlignY=35&desc=DevSecOps%20Ultimate%20Agent%20%7C%20%E6%99%BA%E8%83%BD%E9%96%8B%E7%99%BC%E5%8A%A9%E6%89%8B&descAlignY=55&descSize=18" alt="Cursor User Rules 2025 Header">
-</picture>
-
-<!-- 動態打字效果 -->
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=4285F4&center=true&vCenter=true&multiline=true&width=800&height=100&lines=%F0%9F%9A%80+%E5%BE%9E+MVP+%E5%88%B0%E4%BC%81%E6%A5%AD%E7%B4%9A%E7%B3%BB%E7%B5%B1%E7%9A%84%E5%AE%8C%E6%95%B4%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%A1%88;%E2%9C%A8+%E6%94%AF%E6%8F%B4+12+%E7%A8%AE%E5%B7%A5%E7%A8%8B%E5%B8%AB%E8%A7%92%E8%89%B2%E3%80%81MCP+%E4%BA%92%E5%8B%95%E5%9B%9E%E9%A5%8B%E3%80%81Context7+%E6%8A%80%E8%A1%93%E6%96%87%E6%AA%94" alt="Typing Animation">
-  </a>
-</div>
-
-<!-- 版本與狀態徽章群 -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Version-2025.6.2-00D4AA?style=for-the-badge&logo=semanticrelease&logoColor=white&labelColor=1A1A1A" alt="Version">
-  <img src="https://img.shields.io/badge/License-MIT-FF6B6B?style=for-the-badge&logo=mit&logoColor=white&labelColor=1A1A1A" alt="License">
-  <img src="https://img.shields.io/badge/Engineers-12_Roles-9B59B6?style=for-the-badge&logo=github&logoColor=white&labelColor=1A1A1A" alt="Engineers">
-  <img src="https://img.shields.io/badge/MCP-Interactive_Feedback-FD79A8?style=for-the-badge&logo=react&logoColor=white&labelColor=1A1A1A" alt="MCP">
-  <img src="https://img.shields.io/badge/Context7-Dynamic_Docs-E17055?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=1A1A1A" alt="Context7">
-</div>
-
-<br>
-
-<!-- 主導航按鈕 - 精緻設計 -->
-<div align="center">
-  
-  <!-- 第一排 - 主要功能 -->
-  <div>
-    <a href="#-快速開始">
-      <img src="https://img.shields.io/badge/🚀_快速開始-5分鐘設置-4CAF50?style=for-the-badge&logoColor=white&labelColor=2E7D32" alt="快速開始">
-    </a>
-    <a href="#-功能特色">
-      <img src="https://img.shields.io/badge/✨_功能特色-核心亮點-2196F3?style=for-the-badge&logoColor=white&labelColor=1565C0" alt="功能特色">
-    </a>
-  </div>
-  
-  <!-- 第二排 - 進階功能 -->
-  <div>
-    <a href="#-工程師角色配置">
-      <img src="https://img.shields.io/badge/👥_角色配置-12種角色-FF9800?style=for-the-badge&logoColor=white&labelColor=F57C00" alt="角色配置">
-    </a>
-    <a href="#-文檔">
-      <img src="https://img.shields.io/badge/📚_文檔指南-完整文檔-9C27B0?style=for-the-badge&logoColor=white&labelColor=7B1FA2" alt="文檔指南">
-    </a>
-  </div>
-  
-  <!-- 第三排 - 社群 -->
-  <div>
-    <a href="#-貢獻指南">
-      <img src="https://img.shields.io/badge/🤝_貢獻指南-參與開發-E91E63?style=for-the-badge&logoColor=white&labelColor=C2185B" alt="貢獻指南">
-    </a>
-  </div>
-  
-</div>
-
-<!-- 響應式 CSS 嵌入 -->
 <style>
-/* 響應式設計 - 手機友善 */
+/* 響應式按鈕設計 - 手機友善 */
 @media (max-width: 768px) {
-  div[align="center"] > div {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 8px !important;
-    margin: 4px 0 !important;
+  .badge-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
   }
   
-  div[align="center"] img[src*="style=for-the-badge"] {
-    min-width: 280px !important;
-    max-width: 320px !important;
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+  }
+  
+  .badge-item {
+    max-width: 100%;
+    min-width: 280px;
   }
 }
 
 @media (max-width: 480px) {
-  div[align="center"] img[src*="style=for-the-badge"] {
-    min-width: 260px !important;
-    max-width: 300px !important;
-    font-size: 14px !important;
-  }
-  
-  div[align="center"] > div {
-    gap: 6px !important;
+  .badge-item {
+    min-width: 260px;
+    font-size: 14px;
   }
 }
 
-/* 徽章懸停效果 */
-img[src*="style=for-the-badge"]:hover {
-  filter: brightness(1.1) scale(1.02);
+/* 高級感設計元素 */
+.premium-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+
+.premium-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
 </style>
+
+<div align="center">
+
+![Cursor User Rules 2025](https://img.shields.io/badge/Cursor%20User%20Rules-2025-blue?style=for-the-badge&logo=cursor)
+![Version](https://img.shields.io/badge/version-2025.6.2-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
+![Engineers](https://img.shields.io/badge/engineers-12%20roles-orange?style=for-the-badge)
+![MCP](https://img.shields.io/badge/MCP-Interactive%20Feedback-purple?style=for-the-badge)
+![Context7](https://img.shields.io/badge/Context7-Dynamic%20Docs-red?style=for-the-badge)
+
+**🚀 智能開發助手與全工程師角色最佳實踐配置**
+
+_從個人 Side Project 到企業級系統的完整解決方案_
+
+<div align="center" class="badge-container">
+
+<div class="badge-row">
+
+[![快速開始](https://img.shields.io/badge/🚀_快速開始-點擊開始-4A90E2?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-快速開始)
+[![功能特色](https://img.shields.io/badge/✨_功能特色-查看特色-7B68EE?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-功能特色)
+
+</div>
+
+<div class="badge-row">
+
+[![角色配置](https://img.shields.io/badge/👥_角色配置-選擇角色-FF6B6B?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-工程師角色配置)
+[![文檔指南](https://img.shields.io/badge/📚_文檔指南-查看文檔-4ECDC4?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-文檔)
+
+</div>
+
+<div class="badge-row">
+
+[![貢獻指南](https://img.shields.io/badge/🤝_貢獻指南-參與貢獻-45B7D1?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-貢獻指南)
+
+</div>
+
+</div>
 
 </div>
 
 ---
 
-<div align="center">
-
 ## 📖 專案簡介
-
-</div>
-
-<table>
-<tr>
-<td width="60%">
 
 **Cursor User Rules 2025** 是一套基於現代軟體工程最佳實踐的智能開發配置系統，專為 Cursor IDE 設計。本專案整合了 DevSecOps、技術債務監控、MCP Interactive Feedback 等先進機制，支援 12 種工程師角色，提供從 MVP 到企業級的循序漸進開發指導。
 
 ### 🎯 設計理念
 
-<div align="left">
+- **MVP 優先**：先建立最小可行產品，再逐步擴展功能
+- **循序漸進**：避免過早優化與過度工程化
+- **品質保證**：每個步驟都包含適當的測試與文檔
+- **智能適應**：根據專案類型自動調整工具鏈與流程複雜度
 
-```yaml
-philosophy:
-  mvp_first: "先建立最小可行產品，再逐步擴展功能"
-  progressive: "避免過早優化與過度工程化"
-  quality_assured: "每個步驟都包含適當的測試與文檔"
-  intelligent_adaptation: "根據專案類型自動調整工具鏈與流程複雜度"
-```
+### 🌟 核心價值
 
-</div>
-
-</td>
-<td width="40%" align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/s123104/cursor-user-rules-2025/assets/placeholder-dark.svg">
-  <img src="https://github.com/s123104/cursor-user-rules-2025/assets/placeholder-light.svg" alt="DevSecOps Workflow" width="100%">
-</picture>
-
-</td>
-</tr>
-</table>
-
-### 🌟 核心價值主張
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/⚡_開發效率-提升_300%25-00C851?style=flat-square&labelColor=2E7D32">
-<br><sub>智能化工作流程與自動化工具</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🛡️_技術債務-降低_80%25-FF4444?style=flat-square&labelColor=C62828">
-<br><sub>持續監控與自動化重構</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🎯_代碼品質-提高_250%25-2196F3?style=flat-square&labelColor=1565C0">
-<br><sub>多層次品質檢查機制</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🚀_團隊協作-標準化-9C27B0?style=flat-square&labelColor=7B1FA2">
-<br><sub>標準化流程與文檔管理</sub>
-</td>
-</tr>
-</table>
-
-</div>
+- ⚡ **提升開發效率 300%**：智能化工作流程與自動化工具
+- 🛡️ **降低技術債務 80%**：持續監控與自動化重構
+- 🎯 **提高代碼品質 250%**：多層次品質檢查機制
+- 🚀 **加速團隊協作**：標準化流程與文檔管理
 
 ---
-
-<div align="center">
 
 ## ✨ 功能特色
 
-</div>
+### 🧠 智能專案檢測
 
-### 🧠 智能專案檢測系統
+- **自動識別專案類型**：個人專案、新創 MVP、小型企業、企業關鍵系統
+- **動態複雜度調整**：minimal → standard → comprehensive → enterprise
+- **避免過度工程化**：根據實際需求漸進式啟用功能
 
-<div align="center">
-
-```mermaid
-graph LR
-    A[專案掃描] --> B{專案類型檢測}
-    B -->|個人專案| C[Minimal]
-    B -->|新創MVP| D[Standard]
-    B -->|小型企業| E[Comprehensive]
-    B -->|企業級| F[Enterprise]
-
-    C --> G[基礎工具]
-    D --> H[自動化CI/CD]
-    E --> I[全面品質控制]
-    F --> J[企業治理]
-```
-
-</div>
+### 👥 全角色工程師支援
 
 <table>
 <tr>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🔍_自動識別-專案類型-00BCD4?style=for-the-badge&logoColor=white">
-<br><sub>個人專案、新創 MVP、小型企業、企業關鍵系統</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/📈_動態調整-複雜度管理-4CAF50?style=for-the-badge&logoColor=white">
-<br><sub>minimal → standard → comprehensive → enterprise</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🎯_漸進式-避免過度工程-FF9800?style=for-the-badge&logoColor=white">
-<br><sub>根據實際需求漸進式啟用功能</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🧠_智能學習-使用模式-9C27B0?style=for-the-badge&logoColor=white">
-<br><sub>基於使用模式自動優化配置</sub>
-</td>
+<td align="center">🎨<br><strong>前端工程師</strong><br>React/Vue/Angular</td>
+<td align="center">⚙️<br><strong>後端工程師</strong><br>API設計與優化</td>
+<td align="center">🔄<br><strong>全端工程師</strong><br>端到端開發</td>
+<td align="center">📱<br><strong>行動應用工程師</strong><br>iOS/Android/跨平台</td>
 </tr>
-</table>
-
-### 👥 全角色工程師生態系統
-
-<div align="center">
-
-<!-- 第一排：核心開發角色 -->
-<div>
-  <a href="docs/roles/frontend-engineer.md">
-    <img src="https://img.shields.io/badge/🎨_前端工程師-React•Vue•Angular-E91E63?style=for-the-badge&logo=react&logoColor=white&labelColor=C2185B">
-  </a>
-  <a href="docs/roles/backend-engineer.md">
-    <img src="https://img.shields.io/badge/⚙️_後端工程師-API•微服務•資料庫-2196F3?style=for-the-badge&logo=node.js&logoColor=white&labelColor=1565C0">
-  </a>
-</div>
-
-<!-- 第二排：全端與行動 -->
-<div>
-  <a href="docs/roles/fullstack-engineer.md">
-    <img src="https://img.shields.io/badge/🔄_全端工程師-Next.js•Nuxt•SvelteKit-4CAF50?style=for-the-badge&logo=vercel&logoColor=white&labelColor=2E7D32">
-  </a>
-  <a href="docs/roles/mobile-engineer.md">
-    <img src="https://img.shields.io/badge/📱_行動工程師-iOS•Android•RN•Flutter-FF9800?style=for-the-badge&logo=android&logoColor=white&labelColor=F57C00">
-  </a>
-</div>
-
-<!-- 第三排：專業化開發 -->
-<div>
-  <a href="docs/roles/game-developer.md">
-    <img src="https://img.shields.io/badge/🎮_遊戲開發-Unity•Unreal•Godot-9C27B0?style=for-the-badge&logo=unity&logoColor=white&labelColor=7B1FA2">
-  </a>
-  <a href="docs/roles/embedded-engineer.md">
-    <img src="https://img.shields.io/badge/🔌_嵌入式-IoT•RTOS•硬體整合-795548?style=for-the-badge&logo=arduino&logoColor=white&labelColor=5D4037">
-  </a>
-</div>
-
-<!-- 第四排：資料與 AI -->
-<div>
-  <a href="docs/roles/data-engineer.md">
-    <img src="https://img.shields.io/badge/📊_資料工程師-Pipeline•ETL•BigData-00BCD4?style=for-the-badge&logo=apache-airflow&logoColor=white&labelColor=0097A7">
-  </a>
-  <a href="docs/roles/ml-engineer.md">
-    <img src="https://img.shields.io/badge/🤖_ML工程師-PyTorch•TensorFlow•MLOps-FF5722?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=D84315">
-  </a>
-</div>
-
-<!-- 第五排：維運與品質 -->
-<div>
-  <a href="docs/roles/devops-engineer.md">
-    <img src="https://img.shields.io/badge/🚀_DevOps工程師-K8s•Docker•Terraform-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=1565C0">
-  </a>
-  <a href="docs/roles/security-engineer.md">
-    <img src="https://img.shields.io/badge/🔒_安全工程師-SAST•DAST•合規-F44336?style=for-the-badge&logo=security&logoColor=white&labelColor=C62828">
-  </a>
-</div>
-
-<!-- 第六排：測試與架構 -->
-<div>
-  <a href="docs/roles/qa-engineer.md">
-    <img src="https://img.shields.io/badge/✅_QA工程師-Testing•Automation-4CAF50?style=for-the-badge&logo=jest&logoColor=white&labelColor=2E7D32">
-  </a>
-  <a href="docs/roles/architect.md">
-    <img src="https://img.shields.io/badge/🏗️_軟體架構師-Design•Governance-607D8B?style=for-the-badge&logo=blueprint&logoColor=white&labelColor=455A64">
-  </a>
-</div>
-
-</div>
-
-### 🔄 MCP Interactive Feedback 即時互動機制
-
-<table>
 <tr>
-<td width="50%">
-
-#### 🎯 核心特性
-
-```typescript
-interface MCPFeedback {
-  mandatory: boolean; // 強制執行
-  realtime: boolean; // 即時回饋
-  adaptive: boolean; // 智能適應
-  continuous: boolean; // 持續改善
-}
-```
-
-</td>
-<td width="50%">
-
-#### 📊 回饋循環
-
-```mermaid
-graph TD
-    A[開發行動] --> B[MCP 回饋收集]
-    B --> C[分析與處理]
-    C --> D[策略調整]
-    D --> E[應用改善]
-    E --> A
-```
-
-</td>
+<td align="center">🎮<br><strong>遊戲開發工程師</strong><br>Unity/Unreal</td>
+<td align="center">🔌<br><strong>嵌入式系統工程師</strong><br>硬體軟體整合</td>
+<td align="center">📊<br><strong>資料工程師</strong><br>資料管道與品質</td>
+<td align="center">🤖<br><strong>機器學習工程師</strong><br>MLOps與模型部署</td>
 </tr>
-</table>
-
-### 📊 技術債務智能監控系統
-
-<div align="center">
-
-<table>
 <tr>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/📈_程式碼複雜度-自動監控-FF5722?style=flat-square&logoColor=white">
-<br><sub>循環複雜度 ≤ 10 | 認知複雜度 ≤ 15</sub>
-</td>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/🔍_重複檢測-智能分析-4CAF50?style=flat-square&logoColor=white">
-<br><sub>重複程式碼 ≤ 3% | 自動重構建議</sub>
-</td>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/⚠️_預警系統-即時通知-FF9800?style=flat-square&logoColor=white">
-<br><sub>超出閾值警告 | 趨勢分析報告</sub>
-</td>
+<td align="center">🚀<br><strong>DevOps工程師</strong><br>CI/CD與基礎設施</td>
+<td align="center">🔒<br><strong>安全工程師</strong><br>安全左移與合規</td>
+<td align="center">✅<br><strong>QA工程師</strong><br>測試策略與自動化</td>
+<td align="center">🏗️<br><strong>軟體架構師</strong><br>系統設計與治理</td>
 </tr>
 </table>
 
-</div>
+### 🔄 MCP Interactive Feedback 機制
 
-### 🎛️ Context7 動態技術文檔整合
+- **強制互動回饋**：每個開發步驟都包含用戶回饋循環
+- **智能調整**：根據回饋自動調整開發策略
+- **持續改善**：基於使用模式不斷優化配置
 
-<table>
-<tr>
-<td width="60%">
+### 📊 技術債務監控
 
-#### 🚀 無需註冊，一鍵啟用
+- **自動化監控**：程式碼複雜度、重複度、可維護性指標
+- **預警機制**：超出閾值時自動發出警告
+- **減少策略**：自動化重構工具與最佳實踐建議
 
-```bash
-# Context7 MCP 伺服器配置
-{
-  "context7": {
-    "command": "npx",
-    "args": ["-y", "@upstash/context7-mcp"],
-    "timeout": 300
-  }
-}
-```
+### 🎛️ Context7 技術文檔整合
 
-**支援的技術生態**:
-
-- 🎨 前端框架: React, Vue, Angular, Svelte
-- ⚙️ 後端技術: Node.js, Python, Go, Rust
-- 🗄️ 資料庫: PostgreSQL, MongoDB, Redis
-- ☁️ 雲端平台: AWS, GCP, Azure, Vercel
-
-</td>
-<td width="40%" align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Context7-Dynamic_Docs-00D4AA?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=1A1A1A">
-  <img src="https://img.shields.io/badge/Context7-Dynamic_Docs-00D4AA?style=for-the-badge&logo=gitbook&logoColor=black&labelColor=F5F5F5" alt="Context7">
-</picture>
-
-**🔄 即時更新技術文檔**
-<br>**📚 涵蓋主流技術框架**
-<br>**🎯 基於最新版本決策**
-
-</td>
-</tr>
-</table>
+- **動態文檔獲取**：自動獲取最新技術框架文檔
+- **版本同步**：確保使用最新的技術標準
+- **決策支援**：基於最新文檔的技術決策建議
 
 ---
 
-<div align="center">
-
 ## 🚀 快速開始
 
-_5 分鐘完成配置，立即體驗智能開發助手_
+### 📋 系統需求
 
-</div>
+- **Cursor IDE**: v0.40+
+- **Node.js**: 18+ (可選，用於某些工具)
+- **Git**: 2.30+
+- **作業系統**: Windows 10+, macOS 12+, Linux (Ubuntu 20.04+)
 
-### 🛠️ 系統需求檢查
+### ⚡ 5 分鐘快速設置
 
-<div align="center">
+#### 步驟 1: 安裝 MCP 組件
 
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/Cursor_IDE-v0.40+-00C4CC?style=for-the-badge&logo=cursor&logoColor=white">
-<br><sub>智能程式碼編輯器</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/Node.js-18+-68A063?style=for-the-badge&logo=node.js&logoColor=white">
-<br><sub>JavaScript 執行環境</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/Git-2.30+-F05032?style=for-the-badge&logo=git&logoColor=white">
-<br><sub>版本控制系統</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/OS-Win•Mac•Linux-0078D4?style=for-the-badge&logo=windows&logoColor=white">
-<br><sub>跨平台支援</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-### ⚡ 智能安裝流程
-
-<div align="center">
-
-```mermaid
-graph LR
-    A[📦 安裝 MCP] --> B[⚙️ 配置 Cursor]
-    B --> C[📄 下載配置文件]
-    C --> D[🎯 個人化設定]
-    D --> E[✅ 驗證完成]
-
-    style A fill:#E3F2FD
-    style B fill:#F3E5F5
-    style C fill:#E8F5E8
-    style D fill:#FFF3E0
-    style E fill:#FFEBEE
-```
-
-</div>
-
-<details>
-<summary><strong>📦 步驟 1: 安裝 MCP 智能互動元件</strong></summary>
-
-**安裝 UV Python 套件管理器**
+**安裝 MCP Feedback Enhanced**
 
 ```bash
+# 安裝 uv (如果尚未安裝)
 # Windows (PowerShell)
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 # macOS/Linux
 curl -LsSf https://astral.sh/uv/install.sh | sh
-```
 
-**安裝 MCP Feedback Enhanced**
-
-```bash
-# 安裝最新版本的 MCP Interactive Feedback
+# 安裝 MCP Feedback Enhanced
 uvx mcp-feedback-enhanced@latest
-
-# 驗證安裝
-uvx mcp-feedback-enhanced --version
 ```
 
-> ✨ **Context7 將在配置 Cursor IDE 時自動安裝，無需額外步驟**
-
-</details>
-
-<details>
-<summary><strong>⚙️ 步驟 2: 配置 Cursor IDE MCP 伺服器</strong></summary>
-
-**找到並編輯 MCP 配置檔案**：
+**安裝 Context7**
 
 ```bash
-# Windows
-%USERPROFILE%\.cursor\mcp_servers.json
-
-# macOS/Linux
-~/.cursor/mcp_servers.json
+# Context7 MCP 伺服器 (無需註冊)
+# 將會在配置 Cursor IDE 時自動安裝
 ```
 
-**複製並貼上完整配置**：
+#### 步驟 2: 配置 Cursor IDE
+
+**編輯 MCP 伺服器配置**
+
+```bash
+# 開啟 Cursor IDE 設置
+# Ctrl/Cmd + , → 搜尋 "MCP"
+# 或編輯 ~/.cursor/mcp_servers.json
+```
+
+**添加配置內容**
 
 ```json
 {
@@ -497,129 +225,53 @@ uvx mcp-feedback-enhanced --version
 }
 ```
 
-> 💡 **快速編輯**: 在 Cursor IDE 中按 `Ctrl/Cmd + ,` → 搜尋 "MCP" → 編輯伺服器配置
-
-</details>
-
-<details>
-<summary><strong>📄 步驟 3: 下載最新配置文件</strong></summary>
-
-**方法一：Git Clone (推薦)**
+#### 步驟 3: 下載配置檔案
 
 ```bash
+# 方法一：直接複製配置文件
+# 1. 開啟 Cursor IDE
+# 2. 前往 Settings → User Rules
+# 3. 複製 cursor-user-rules-2025.md 的全部內容並貼上
+
+# 方法二：使用 Git Clone
 git clone https://github.com/s123104/cursor-user-rules-2025.git
 cd cursor-user-rules-2025
-
-# 查看可用檔案
-ls -la
 ```
 
-**方法二：直接下載單一檔案**
+#### 步驟 4: 個人化設定
 
-1. 前往 [cursor-user-rules-2025.md](cursor-user-rules-2025.md)
-2. 點擊 "Raw" 查看原始檔案
-3. 全選複製 (`Ctrl/Cmd + A`, `Ctrl/Cmd + C`)
-4. 在 Cursor IDE 中建立新的 User Rules 檔案並貼上
-
-**方法三：Cursor IDE 內建功能**
-
-1. 開啟 Cursor IDE
-2. 前往 `Settings` → `User Rules`
-3. 貼上完整配置內容
-
-</details>
-
-<details>
-<summary><strong>🎯 步驟 4: 個人化智能配置</strong></summary>
-
-**編輯個人化設定**：
+編輯配置文件中的個人化設定：
 
 ```yaml
-# 🎯 個人化設定 - 請根據您的需求修改
-USER_ROLE: "s123104" # ← 修改為您的 GitHub 用戶名
+# ▶︎ 個人化設定 ────────────────────────────────
+USER_ROLE: "your-name" # ← 修改為您的實際帳號名稱
 project_context: "auto-detect" # personal | enterprise | startup | research
 development_style: "progressive" # minimal | standard | comprehensive | enterprise
 team_size: "auto-detect" # solo | small | medium | large
 deployment_target: "auto-detect" # local | cloud | hybrid | edge
 ```
 
-**選擇您的專業角色**：
+#### 步驟 5: 驗證設置
 
-```yaml
-# 範例配置
-specialization: "fullstack" # frontend | backend | fullstack | mobile | data | ml
-primary_technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"]
-secondary_technologies: ["Docker", "Kubernetes", "AWS"]
+```bash
+# 重新啟動 Cursor IDE
+
+# 測試 MCP Interactive Feedback
+echo "請使用 MCP Interactive Feedback 測試連接"
+
+# 測試 Context7
+echo "請使用 Context7 獲取 React 的最新文檔"
+
+# 測試智能專案檢測
+echo "請分析這個專案的類型和複雜度"
 ```
 
-</details>
-
-<details>
-<summary><strong>✅ 步驟 5: 系統驗證與測試</strong></summary>
-
-**重新啟動 Cursor IDE** 以載入新配置
-
-**測試 MCP Interactive Feedback**：
-
-1. 開啟任一程式碼檔案
-2. 觸發 MCP Interactive Feedback 功能
-3. 確認出現互動回饋界面
-
-**測試 Context7 動態文檔**：
-
-1. 在 AI 聊天中輸入：「請使用 Context7 獲取 React 的最新文檔」
-2. 確認系統自動獲取最新技術文檔
-
-**測試智能專案檢測**：
-
-1. 開啟一個現有專案
-2. 詢問：「請分析這個專案的類型和複雜度」
-3. 確認獲得適當的配置建議
-
-</details>
-
-### 🎯 快速驗證與支援
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="33%">
-<a href="docs/mcp-setup-guide.md">
-<img src="https://img.shields.io/badge/📖_詳細指引-MCP_設置_FAQ-4CAF50?style=for-the-badge&logoColor=white&labelColor=2E7D32">
-</a>
-<br><sub>完整的安裝說明與疑難排解指南</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Minidoracat/mcp-feedback-enhanced">
-<img src="https://img.shields.io/badge/🔧_技術支援-MCP_Feedback-FF5722?style=for-the-badge&logo=github&logoColor=white&labelColor=D84315">
-</a>
-<br><sub>互動回饋機制官方技術支援</sub>
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/upstash/context7">
-<img src="https://img.shields.io/badge/📚_文檔支援-Context7_Dynamic-00D4AA?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=00A693">
-</a>
-<br><sub>動態技術文檔獲取官方支援</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-### 🚨 智能故障排除系統
-
-<div align="center">
-
-| 狀態 | 問題描述        | 快速解決方案                                     | 預估時間 |
-| ---- | --------------- | ------------------------------------------------ | -------- |
-| 🔴   | MCP 連接失敗    | 檢查 Python/Node.js 版本                         | 2 分鐘   |
-| 🟠   | Context7 無回應 | 確認網路連接與 npx 權限                          | 1 分鐘   |
-| 🟡   | 配置未生效      | 重新啟動 Cursor IDE                              | 30 秒    |
-| 🔵   | 功能部分異常    | 查看詳細 [疑難排解指南](docs/mcp-setup-guide.md) | 5 分鐘   |
-| 🟢   | 功能完全正常    | 🎉 **開始享受智能開發體驗！**                    | 立即     |
-
-</div>
+> 💡 **詳細安裝指引**: 請參考 [MCP 安裝與使用指引](docs/mcp-setup-guide.md) 獲得完整的設置說明和疑難排解。
+>
+> 🔧 **技術支援**: 如有任何問題，請查看：
+>
+> - [MCP Feedback Enhanced](https://github.com/Minidoracat/mcp-feedback-enhanced) - 互動回饋機制
+> - [Context7](https://github.com/upstash/context7) - 動態技術文檔獲取
 
 ### 🎯 選擇您的角色配置
 

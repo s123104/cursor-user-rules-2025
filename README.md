@@ -1,50 +1,5 @@
 # Cursor User Rules 2025 - DevSecOps Ultimate Agent
 
-<style>
-/* 響應式按鈕設計 - 手機友善 */
-@media (max-width: 768px) {
-  .badge-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-  }
-  
-  .badge-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4px;
-    width: 100%;
-  }
-  
-  .badge-item {
-    max-width: 100%;
-    min-width: 280px;
-  }
-}
-
-@media (max-width: 480px) {
-  .badge-item {
-    min-width: 260px;
-    font-size: 14px;
-  }
-}
-
-/* 高級感設計元素 */
-.premium-badge {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
-.premium-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-</style>
-
 <div align="center">
 
 ![Cursor User Rules 2025](https://img.shields.io/badge/Cursor%20User%20Rules-2025-blue?style=for-the-badge&logo=cursor)
@@ -58,29 +13,39 @@
 
 _從個人 Side Project 到企業級系統的完整解決方案_
 
-<div align="center" class="badge-container">
-
-<div class="badge-row">
+<table>
+<tr>
+<td align="center">
 
 [![快速開始](https://img.shields.io/badge/🚀_快速開始-點擊開始-4A90E2?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-快速開始)
+
+</td>
+<td align="center">
+
 [![功能特色](https://img.shields.io/badge/✨_功能特色-查看特色-7B68EE?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-功能特色)
 
-</div>
-
-<div class="badge-row">
+</td>
+</tr>
+<tr>
+<td align="center">
 
 [![角色配置](https://img.shields.io/badge/👥_角色配置-選擇角色-FF6B6B?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-工程師角色配置)
+
+</td>
+<td align="center">
+
 [![文檔指南](https://img.shields.io/badge/📚_文檔指南-查看文檔-4ECDC4?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-文檔)
 
-</div>
-
-<div class="badge-row">
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
 
 [![貢獻指南](https://img.shields.io/badge/🤝_貢獻指南-參與貢獻-45B7D1?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-貢獻指南)
 
-</div>
-
-</div>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -602,12 +567,39 @@ cursor-user-rules-2025/
 
 <div align="center">
 
+<table>
+<tr>
+<td align="center">
+
 [![主配置檔案](https://img.shields.io/badge/⚙️_主配置檔案-Cursor_User_Rules-4A90E2?style=for-the-badge)](cursor-user-rules-2025.md)
+
+</td>
+<td align="center">
+
 [![MCP 安裝指引](https://img.shields.io/badge/🔧_MCP_安裝指引-完整教學-7B68EE?style=for-the-badge)](docs/mcp-setup-guide.md)
 
+</td>
+</tr>
+<tr>
+<td align="center">
+
 [![系統架構](https://img.shields.io/badge/🏗️_系統架構-設計文檔-FF6B6B?style=for-the-badge)](docs/architecture.md)
+
+</td>
+<td align="center">
+
 [![版本記錄](https://img.shields.io/badge/📝_版本記錄-更新內容-4ECDC4?style=for-the-badge)](CHANGELOG.md)
+
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+
 [![版本歷史](https://img.shields.io/badge/🕒_版本歷史-完整追蹤-45B7D1?style=for-the-badge)](versions/README.md)
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -615,11 +607,32 @@ cursor-user-rules-2025/
 
 <div align="center">
 
+<table>
+<tr>
+<td align="center">
+
 [![前端工程師](https://img.shields.io/badge/🎨_前端工程師-React/Vue/Angular-61DAFB?style=for-the-badge)](roles/frontend-engineer.md)
+
+</td>
+<td align="center">
+
 [![後端工程師](https://img.shields.io/badge/⚙️_後端工程師-API_設計優化-68C242?style=for-the-badge)](roles/backend-engineer.md)
 
+</td>
+</tr>
+<tr>
+<td align="center">
+
 [![DevOps 工程師](https://img.shields.io/badge/🚀_DevOps_工程師-CI/CD_基礎設施-FF7F50?style=for-the-badge)](roles/devops-engineer.md)
+
+</td>
+<td align="center">
+
 [![ML 工程師](https://img.shields.io/badge/🤖_ML_工程師-MLOps_模型部署-FF6B95?style=for-the-badge)](roles/ml-engineer.md)
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -627,9 +640,25 @@ cursor-user-rules-2025/
 
 <div align="center">
 
+<table>
+<tr>
+<td align="center">
+
 [![專案檢查工具](https://img.shields.io/badge/🔍_專案檢查工具-健康檢查-28A745?style=for-the-badge)](tools/project-checker.md)
+
+</td>
+<td align="center">
+
 [![TODO 模板](https://img.shields.io/badge/📋_TODO_模板-任務管理-FFA500?style=for-the-badge)](templates/TODO-template.md)
+
+</td>
+<td align="center">
+
 [![程式碼審查](https://img.shields.io/badge/✅_程式碼審查-品質控制-9B59B6?style=for-the-badge)](templates/code-review.md)
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -637,11 +666,32 @@ cursor-user-rules-2025/
 
 <div align="center">
 
+<table>
+<tr>
+<td align="center">
+
 [![API 參考](https://img.shields.io/badge/📚_API_參考-完整文檔-2196F3?style=for-the-badge)](docs/api-reference.md)
+
+</td>
+<td align="center">
+
 [![疑難排解](https://img.shields.io/badge/🔧_疑難排解-問題解決-E91E63?style=for-the-badge)](docs/troubleshooting.md)
 
+</td>
+</tr>
+<tr>
+<td align="center">
+
 [![最佳實踐](https://img.shields.io/badge/⭐_最佳實踐-業界標準-4CAF50?style=for-the-badge)](docs/best-practices.md)
+
+</td>
+<td align="center">
+
 [![常見問題](https://img.shields.io/badge/❓_常見問題-FAQ-FF9800?style=for-the-badge)](docs/faq.md)
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -760,8 +810,15 @@ npm run format
 <img src="https://contrib.rocks/image?repo=s123104/cursor-user-rules-2025" />
 </a>
 
-[![成為貢獻者](https://img.shields.io/badge/🌟_成為貢獻者-歡迎參與-FF6B6B?style=for-the-badge&logo=github)](README.md#-貢獻指南)
-[![查看所有貢獻者](https://img.shields.io/badge/👥_查看所有貢獻者-GitHub-4A90E2?style=for-the-badge&logo=github)](https://github.com/s123104/cursor-user-rules-2025/graphs/contributors)
+<p>
+<a href="README.md#-貢獻指南">
+<img src="https://img.shields.io/badge/🌟_成為貢獻者-歡迎參與-FF6B6B?style=for-the-badge&logo=github" alt="成為貢獻者" />
+</a>
+<br>
+<a href="https://github.com/s123104/cursor-user-rules-2025/graphs/contributors">
+<img src="https://img.shields.io/badge/👥_查看所有貢獻者-GitHub-4A90E2?style=for-the-badge&logo=github" alt="查看所有貢獻者" />
+</a>
+</p>
 
 </div>
 
@@ -931,20 +988,29 @@ SOFTWARE.
 
 ## 🚀 立即開始您的智能開發之旅！
 
-<div align="center" class="badge-container">
+<div align="center">
 
-<div class="badge-row">
+<table>
+<tr>
+<td align="center" colspan="2">
 
 [![立即下載](https://img.shields.io/badge/⬇️_立即下載-開始配置-4A90E2?style=for-the-badge&logo=download&logoColor=white&labelColor=1A1A1A)](cursor-user-rules-2025.md)
 
-</div>
-
-<div class="badge-row">
+</td>
+</tr>
+<tr>
+<td align="center">
 
 [![查看文檔](https://img.shields.io/badge/📚_查看文檔-詳細指南-7B68EE?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=1A1A1A)](docs/)
+
+</td>
+<td align="center">
+
 [![加入社群](https://img.shields.io/badge/👥_加入社群-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=1A1A1A)](https://discord.gg/cursor-rules)
 
-</div>
+</td>
+</tr>
+</table>
 
 </div>
 

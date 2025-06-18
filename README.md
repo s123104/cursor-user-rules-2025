@@ -2,50 +2,79 @@
 
 <div align="center">
 
-![Cursor User Rules 2025](https://img.shields.io/badge/Cursor%20User%20Rules-2025-blue?style=for-the-badge&logo=cursor)
-![Version](https://img.shields.io/badge/version-2025.6.2-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
-![Engineers](https://img.shields.io/badge/engineers-12%20roles-orange?style=for-the-badge)
-![MCP](https://img.shields.io/badge/MCP-Interactive%20Feedback-purple?style=for-the-badge)
-![Context7](https://img.shields.io/badge/Context7-Dynamic%20Docs-red?style=for-the-badge)
+<!-- 頂部徽章群組 - 可點擊版本 -->
+<p>
+<a href="cursor-user-rules-2025.md">
+<img src="https://img.shields.io/badge/Cursor%20User%20Rules-2025-4A90E2?style=for-the-badge&logo=cursor&logoColor=white&labelColor=1A1A1A" alt="Cursor User Rules 2025" />
+</a>
+<a href="CHANGELOG.md">
+<img src="https://img.shields.io/badge/version-2025.6.2-28A745?style=for-the-badge&logo=semantic-release&logoColor=white&labelColor=1A1A1A" alt="Version" />
+</a>
+<a href="LICENSE">
+<img src="https://img.shields.io/badge/license-MIT-17A2B8?style=for-the-badge&logo=opensource&logoColor=white&labelColor=1A1A1A" alt="License" />
+</a>
+</p>
 
-**🚀 智能開發助手與全工程師角色最佳實踐配置**
+<p>
+<a href="README.md#-工程師角色配置">
+<img src="https://img.shields.io/badge/engineers-12%20roles-FF6B6B?style=for-the-badge&logo=team&logoColor=white&labelColor=1A1A1A" alt="Engineers" />
+</a>
+<a href="docs/mcp-setup-guide.md">
+<img src="https://img.shields.io/badge/MCP-Interactive%20Feedback-7B68EE?style=for-the-badge&logo=feedback&logoColor=white&labelColor=1A1A1A" alt="MCP" />
+</a>
+<a href="docs/architecture.md">
+<img src="https://img.shields.io/badge/Context7-Dynamic%20Docs-E74C3C?style=for-the-badge&logo=documentation&logoColor=white&labelColor=1A1A1A" alt="Context7" />
+</a>
+</p>
 
-_從個人 Side Project 到企業級系統的完整解決方案_
+<!-- 主標題區域 -->
+<h2>🚀 智能開發助手與全工程師角色最佳實踐配置</h2>
+<em>從個人 Side Project 到企業級系統的完整解決方案</em>
 
+<br><br>
+
+<!-- 主要導航按鈕 -->
 <table>
 <tr>
 <td align="center">
 
-[![快速開始](https://img.shields.io/badge/🚀_快速開始-點擊開始-4A90E2?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-快速開始)
+[![快速開始](https://img.shields.io/badge/🚀_快速開始-點擊開始-6C63FF?style=for-the-badge&logoColor=white&labelColor=2D1B69)](README.md#-快速開始)
 
 </td>
 <td align="center">
 
-[![功能特色](https://img.shields.io/badge/✨_功能特色-查看特色-7B68EE?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-功能特色)
+[![功能特色](https://img.shields.io/badge/✨_功能特色-查看特色-FF6B95?style=for-the-badge&logoColor=white&labelColor=8B2635)](README.md#-功能特色)
 
 </td>
 </tr>
 <tr>
 <td align="center">
 
-[![角色配置](https://img.shields.io/badge/👥_角色配置-選擇角色-FF6B6B?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-工程師角色配置)
+[![角色配置](https://img.shields.io/badge/👥_角色配置-選擇角色-4ECDC4?style=for-the-badge&logoColor=white&labelColor=2D5A87)](README.md#-工程師角色配置)
 
 </td>
 <td align="center">
 
-[![文檔指南](https://img.shields.io/badge/📚_文檔指南-查看文檔-4ECDC4?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-文檔)
+[![文檔指南](https://img.shields.io/badge/📚_文檔指南-查看文檔-FFD93D?style=for-the-badge&logoColor=black&labelColor=B8860B)](README.md#-文檔)
 
 </td>
 </tr>
 <tr>
 <td align="center" colspan="2">
 
-[![貢獻指南](https://img.shields.io/badge/🤝_貢獻指南-參與貢獻-45B7D1?style=for-the-badge&logoColor=white&labelColor=2C3E50)](README.md#-貢獻指南)
+[![貢獻指南](https://img.shields.io/badge/🤝_貢獻指南-參與貢獻-20BF6B?style=for-the-badge&logoColor=white&labelColor=0F5132)](README.md#-貢獻指南)
 
 </td>
 </tr>
 </table>
+
+<!-- 統計資訊 -->
+<p>
+<img src="https://img.shields.io/github/stars/s123104/cursor-user-rules-2025?style=flat-square&color=ffd700" alt="GitHub stars" />
+<img src="https://img.shields.io/github/forks/s123104/cursor-user-rules-2025?style=flat-square&color=00bfff" alt="GitHub forks" />
+<img src="https://img.shields.io/github/issues/s123104/cursor-user-rules-2025?style=flat-square&color=ff6b6b" alt="GitHub issues" />
+<img src="https://img.shields.io/github/last-commit/s123104/cursor-user-rules-2025?style=flat-square&color=98fb98" alt="Last commit" />
+</p>
 
 </div>
 
@@ -83,22 +112,94 @@ _從個人 Side Project 到企業級系統的完整解決方案_
 
 <table>
 <tr>
-<td align="center">🎨<br><strong>前端工程師</strong><br>React/Vue/Angular</td>
-<td align="center">⚙️<br><strong>後端工程師</strong><br>API設計與優化</td>
-<td align="center">🔄<br><strong>全端工程師</strong><br>端到端開發</td>
-<td align="center">📱<br><strong>行動應用工程師</strong><br>iOS/Android/跨平台</td>
+<td align="center">
+<a href="roles/frontend-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>🎨 前端工程師</strong><br>
+<em>React/Vue/Angular</em><br>
+<img src="https://img.shields.io/badge/現代前端-最佳實踐-61DAFB?style=flat&logo=react&logoColor=white" alt="Frontend" />
+</a>
+</td>
+<td align="center">
+<a href="roles/backend-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>⚙️ 後端工程師</strong><br>
+<em>API設計與優化</em><br>
+<img src="https://img.shields.io/badge/API設計-架構優化-68C242?style=flat&logo=node.js&logoColor=white" alt="Backend" />
+</a>
+</td>
+<td align="center">
+<a href="roles/fullstack-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>🔄 全端工程師</strong><br>
+<em>端到端開發</em><br>
+<img src="https://img.shields.io/badge/全端開發-完整解決方案-FF7043?style=flat&logo=typescript&logoColor=white" alt="Fullstack" />
+</a>
+</td>
+<td align="center">
+<a href="roles/mobile-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>📱 行動應用工程師</strong><br>
+<em>iOS/Android/跨平台</em><br>
+<img src="https://img.shields.io/badge/行動應用-跨平台-42A5F5?style=flat&logo=flutter&logoColor=white" alt="Mobile" />
+</a>
+</td>
 </tr>
 <tr>
-<td align="center">🎮<br><strong>遊戲開發工程師</strong><br>Unity/Unreal</td>
-<td align="center">🔌<br><strong>嵌入式系統工程師</strong><br>硬體軟體整合</td>
-<td align="center">📊<br><strong>資料工程師</strong><br>資料管道與品質</td>
-<td align="center">🤖<br><strong>機器學習工程師</strong><br>MLOps與模型部署</td>
+<td align="center">
+<a href="roles/game-developer.md" style="text-decoration: none; color: inherit;">
+<strong>🎮 遊戲開發工程師</strong><br>
+<em>Unity/Unreal</em><br>
+<img src="https://img.shields.io/badge/遊戲開發-引擎優化-9C27B0?style=flat&logo=unity&logoColor=white" alt="Game Dev" />
+</a>
+</td>
+<td align="center">
+<a href="roles/embedded-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>🔌 嵌入式系統工程師</strong><br>
+<em>硬體軟體整合</em><br>
+<img src="https://img.shields.io/badge/嵌入式-IoT系統-795548?style=flat&logo=arduino&logoColor=white" alt="Embedded" />
+</a>
+</td>
+<td align="center">
+<a href="roles/data-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>📊 資料工程師</strong><br>
+<em>資料管道與品質</em><br>
+<img src="https://img.shields.io/badge/大數據-管道架構-FF9800?style=flat&logo=apache-spark&logoColor=white" alt="Data" />
+</a>
+</td>
+<td align="center">
+<a href="roles/ml-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>🤖 機器學習工程師</strong><br>
+<em>MLOps與模型部署</em><br>
+<img src="https://img.shields.io/badge/機器學習-MLOps-E91E63?style=flat&logo=tensorflow&logoColor=white" alt="ML" />
+</a>
+</td>
 </tr>
 <tr>
-<td align="center">🚀<br><strong>DevOps工程師</strong><br>CI/CD與基礎設施</td>
-<td align="center">🔒<br><strong>安全工程師</strong><br>安全左移與合規</td>
-<td align="center">✅<br><strong>QA工程師</strong><br>測試策略與自動化</td>
-<td align="center">🏗️<br><strong>軟體架構師</strong><br>系統設計與治理</td>
+<td align="center">
+<a href="roles/devops-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>🚀 DevOps工程師</strong><br>
+<em>CI/CD與基礎設施</em><br>
+<img src="https://img.shields.io/badge/DevOps-雲端自動化-4CAF50?style=flat&logo=docker&logoColor=white" alt="DevOps" />
+</a>
+</td>
+<td align="center">
+<a href="roles/security-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>🔒 安全工程師</strong><br>
+<em>安全左移與合規</em><br>
+<img src="https://img.shields.io/badge/資安防護-零信任架構-F44336?style=flat&logo=security&logoColor=white" alt="Security" />
+</a>
+</td>
+<td align="center">
+<a href="roles/qa-engineer.md" style="text-decoration: none; color: inherit;">
+<strong>✅ QA工程師</strong><br>
+<em>測試策略與自動化</em><br>
+<img src="https://img.shields.io/badge/品質保證-自動化測試-673AB7?style=flat&logo=jest&logoColor=white" alt="QA" />
+</a>
+</td>
+<td align="center">
+<a href="roles/architect.md" style="text-decoration: none; color: inherit;">
+<strong>🏗️ 軟體架構師</strong><br>
+<em>系統設計與治理</em><br>
+<img src="https://img.shields.io/badge/系統架構-技術治理-607D8B?style=flat&logo=architecture&logoColor=white" alt="Architect" />
+</a>
+</td>
 </tr>
 </table>
 
@@ -126,10 +227,36 @@ _從個人 Side Project 到企業級系統的完整解決方案_
 
 ### 📋 系統需求
 
-- **Cursor IDE**: v0.40+
-- **Node.js**: 18+ (可選，用於某些工具)
-- **Git**: 2.30+
-- **作業系統**: Windows 10+, macOS 12+, Linux (Ubuntu 20.04+)
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+
+![Cursor IDE](https://img.shields.io/badge/Cursor_IDE-v0.40+-4A90E2?style=for-the-badge&logo=cursor&logoColor=white&labelColor=1A1A1A)
+
+</td>
+<td align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js-18+-68C242?style=for-the-badge&logo=node.js&logoColor=white&labelColor=1A1A1A)
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+![Git](https://img.shields.io/badge/Git-2.30+-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=1A1A1A)
+
+</td>
+<td align="center">
+
+![OS](https://img.shields.io/badge/OS-Windows%20|%20macOS%20|%20Linux-17A2B8?style=for-the-badge&logo=os&logoColor=white&labelColor=1A1A1A)
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ### ⚡ 5 分鐘快速設置
 
@@ -506,57 +633,73 @@ security_requirements:
 
 ## 📁 專案結構
 
+<div align="center">
+
+**🏗️ 清晰的專案架構設計**
+
+<table>
+<tr>
+<td>
+
+**📖 核心文檔**
+
+- [`README.md`](README.md) - 專案主要說明
+- [`cursor-user-rules-2025.md`](cursor-user-rules-2025.md) - 主配置文件
+- [`CHANGELOG.md`](CHANGELOG.md) - 版本更新記錄
+- [`LICENSE`](LICENSE) - MIT 授權條款
+- [`USAGE-GUIDE.md`](USAGE-GUIDE.md) - 詳細使用指南
+- [`quick-setup-guide.md`](quick-setup-guide.md) - 快速設置指南
+
+</td>
+<td>
+
+**👥 工程師角色**
+
+- [`roles/frontend-engineer.md`](roles/frontend-engineer.md) - 前端工程師
+- [`roles/backend-engineer.md`](roles/backend-engineer.md) - 後端工程師
+- [`roles/devops-engineer.md`](roles/devops-engineer.md) - DevOps 工程師
+- [`roles/ml-engineer.md`](roles/ml-engineer.md) - ML 工程師
+- _[查看所有角色...](roles/)_
+
+</td>
+</tr>
+<tr>
+<td>
+
+**🛠️ 工具與模板**
+
+- [`templates/TODO-template.md`](templates/TODO-template.md) - TODO 模板
+- [`tools/project-checker.md`](tools/project-checker.md) - 專案檢查
+- [`tools/consistency-checker.md`](tools/consistency-checker.md) - 一致性檢查
+- _[查看所有工具...](tools/)_
+
+</td>
+<td>
+
+**📚 詳細文檔**
+
+- [`docs/architecture.md`](docs/architecture.md) - 系統架構
+- [`docs/mcp-setup-guide.md`](docs/mcp-setup-guide.md) - MCP 設置
+- [`tests/`](tests/) - 測試相關文檔
+- _[查看所有文檔...](docs/)_
+
+</td>
+</tr>
+</table>
+
+</div>
+
+**📁 完整目錄結構：**
+
 ```
-cursor-user-rules-2025/
-├── 📄 README.md                    # 專案主要說明文檔
-├── 📄 cursor-user-rules-2025.md    # 主要配置文件
-├── 📄 CHANGELOG.md                 # 版本更新記錄
-├── 📄 LICENSE                      # MIT 授權條款
-├── 📄 USAGE-GUIDE.md              # 詳細使用指南
-├── 📄 quick-setup-guide.md        # 快速設置指南
-├── 📁 roles/                      # 工程師角色配置
-│   ├── 📄 frontend-engineer.md    # 前端工程師配置
-│   ├── 📄 backend-engineer.md     # 後端工程師配置
-│   ├── 📄 fullstack-engineer.md   # 全端工程師配置
-│   ├── 📄 mobile-engineer.md      # 行動應用工程師配置
-│   ├── 📄 devops-engineer.md      # DevOps 工程師配置
-│   ├── 📄 ml-engineer.md          # 機器學習工程師配置
-│   ├── 📄 security-engineer.md    # 安全工程師配置
-│   ├── 📄 qa-engineer.md          # QA 工程師配置
-│   ├── 📄 data-engineer.md        # 資料工程師配置
-│   ├── 📄 game-developer.md       # 遊戲開發工程師配置
-│   ├── 📄 embedded-engineer.md    # 嵌入式系統工程師配置
-│   └── 📄 architect.md            # 軟體架構師配置
-├── 📁 templates/                  # 模板文件
-│   ├── 📄 TODO-template.md        # TODO 項目模板
-│   ├── 📄 project-init.md         # 專案初始化模板
-│   ├── 📄 code-review.md          # 程式碼審查模板
-│   └── 📄 adr-template.md         # 架構決策記錄模板
-├── 📁 tools/                      # 工具與腳本
-│   ├── 📄 project-checker.md      # 專案檢查工具
-│   ├── 📄 consistency-checker.md  # 一致性檢查工具
-│   ├── 📄 quality-gate.md         # 品質門檻工具
-│   └── 📄 deployment-helper.md    # 部署輔助工具
-├── 📁 docs/                       # 詳細文檔
-│   ├── 📄 architecture.md         # 系統架構文檔
-│   ├── 📄 api-reference.md        # API 參考文檔
-│   ├── 📄 troubleshooting.md      # 疑難排解指南
-│   ├── 📄 best-practices.md       # 最佳實踐指南
-│   ├── 📄 migration-guide.md      # 遷移指南
-│   └── 📄 faq.md                  # 常見問題解答
-├── 📁 tests/                      # 測試文件
-│   ├── 📄 unit-tests.md           # 單元測試指南
-│   ├── 📄 integration-tests.md    # 整合測試指南
-│   └── 📄 e2e-tests.md            # 端到端測試指南
-└── 📁 .cursor/                    # Cursor IDE 配置
-    ├── 📄 settings.json           # IDE 設定
-    └── 📁 rules/                  # 專案規則
-        ├── 📄 base.mdc            # 基礎規則
-        ├── 📄 quality.mdc         # 品質規則
-        ├── 📄 security.mdc        # 安全規則
-        ├── 📄 testing.mdc         # 測試規則
-        ├── 📄 performance.mdc     # 效能規則
-        └── 📄 architecture.mdc    # 架構規則
+cursor-user-rules-2025/    🚀 專案根目錄
+├── 📁 roles/              # 👥 工程師角色配置
+├── 📁 templates/          # 📝 模板文件
+├── 📁 tools/              # 🛠️ 工具與腳本
+├── 📁 docs/               # 📚 詳細文檔
+├── 📁 tests/              # ✅ 測試文件
+├── 📁 versions/           # 🕒 版本歷史
+└── 📁 .cursor/            # ⚙️ Cursor IDE 配置
 ```
 
 ---
